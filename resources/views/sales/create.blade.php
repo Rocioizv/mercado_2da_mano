@@ -13,6 +13,7 @@
         </ul>
     </div>
     @endif
+    <a href="{{ route('home') }}" class="btn btn-secondary mt-3">⬅ Volver atrás</a>
 
     <form action="{{ route('sales.store') }}" method="POST" enctype="multipart/form-data">
         @csrf

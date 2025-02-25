@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="container">
-    <h1 class="text-center mb-4">Últimos Productos en Venta</h1>
+
 
     <div class="d-flex justify-content-between mb-3">
         @auth
@@ -21,9 +21,9 @@
         <div class="col-md-4">
             <div class="card product-card">
                 <img src="{{ asset('storage/' . $sale->image) }}" class="card-img-top" alt="{{ $sale->product }}">
-                @if($sale->issold)
+                <!-- @if($sale->issold)
                     <div class="sold-overlay">Vendido</div>
-                @endif
+                @endif -->
 
                 <div class="card-body">
                     <h5 class="card-title">{{ $sale->product }}</h5>
